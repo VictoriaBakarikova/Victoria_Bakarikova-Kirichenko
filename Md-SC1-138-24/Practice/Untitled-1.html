@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><i>Пожалуйста, заполните форму. Обязательные поля помечены *</i></p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+    <legend>Контактная информация</legend>
+        <label for="name">Имя*</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="name">Телефон</label>
+        <input type="text" id="tel" name="tel" pattern="^\+\d{3}\s\d{2}\s\d{7}$" ><br>
+        <label for="mail">Email*</label>
+        <input type="email" id="mail" name="mail" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <label for="age">Возраст*</label>
+        <input type="number" id="age" name="age" required><br>
+        <label for="gender">Пол</label>
+        <select name="gender" id="gender">
+            <optgroup>
+                <option value="1">Женщина</option>
+                <option value="2">Мужчина</option>
+            </optgroup>
+        </select><br>
+        <label for="personal">Перечислите личные качества</label>
+        <textarea name="personal" id="personal"></textarea>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Выберите ваших любимых животных</legend>
+        <label>
+            <input type="checkbox" name="animals"[]>Зебра 
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Кошак 
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Анаконда 
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Человек
+        </label><br>
+        <label>
+            <input type="checkbox" name="animals"[]>Слон 
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Антилопа 
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Голубь
+        </label>
+        <label>
+            <input type="checkbox" name="animals"[]>Краб 
+        </label>
+    </fieldset>
+    <button type="submit">Отправить информацию</button>
+
+    <h1>Registration form</h1>
+    </form>
+<form action="http://fe.it-academy.by/TestForm.php">
+  <label for="f_name">First Name</label>
+  <input type="text" name=f_name placeholder="Enter First Name"><br>
+  <label for="l_name">Last Name</label>
+  <input type="text" name=l_name placeholder="Enter Last Name"><br>
+  <label for="email">Email</label>
+  <input type="email" name="email">
+  <label>
+    <input type="radio" name="gender">Male
+  </label><br>
+  <label>
+    <input type="radio" name="gender">Femal
+  </label><br>
+  <label>
+    <input type="radio" name="gender">Other
+  </label><br>
+  
+</form>
+
+
+
+</body>
+</html>
