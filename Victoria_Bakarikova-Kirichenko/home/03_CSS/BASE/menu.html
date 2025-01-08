@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.day{
+            width: 100px;
+            float: left;
+        }
+        div.day > div{
+            background-color: bisque;
+            border: solid black 2px;
+            position: relative;
+            cursor: pointer;
+        }
+        div.menu{
+            width: 150px;
+            display: none;
+        }
+        div.menu > div{
+            background-color:blanchedalmond;
+            border: solid blueviolet 1px;
+            cursor: pointer;
+        }
+        div.day > div:hover div.menu{
+            display: block;
+            position: absolute; z-index: 1;
+
+        }
+        @media all and (max-width:715px){
+            div.day{float: none;   
+        }
+    
+        div.day > div:hover div.menu{
+            display: block;
+            position: absolute; left: 80%; top:90%; z-index: 1;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="day"><div>Monday</div></div>
+    <div class="day"><div>Tuesday</div></div>
+    <div class="day">
+        <div>Wednesday
+            <div class="menu">
+                <div>breakfest</div>
+                <div>supper</div>
+                <div>dinner</div>
+            </div>
+        </div></div>
+    <div class="day"><div>Thursday</div></div>
+    <div class="day"><div>Friday</div></div>
+    <div class="day"><div>Saturday</div></div>
+    <div class="day"><div>Sunday</div></div>
+
+
+
+
+
+
+    
+</body>
+</html>
